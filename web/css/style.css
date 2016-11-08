@@ -411,11 +411,12 @@ button:hover {
 
 .errors {
     padding: 0;
-    margin: -49px 0 0
+    margin: -49px 0 0 0
 }
 
 .errors li {
-    line-height: 25px
+    line-height: 25px;
+    width: 300px
 }
 
 #info {
