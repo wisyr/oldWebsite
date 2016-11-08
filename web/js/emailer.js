@@ -39,12 +39,8 @@
                 if (k.type === "email") {
                     j = e(k)
                 } else {
-                    if (k.type === "select-one") {
-                        j = d(k)
-                    } else {
-                        if (k.type === "textarea") {
-                            j = g(k, 2)
-                        }
+                    if (k.type === "textarea") {
+                        j = g(k, 2)
                     }
                 }
             }
@@ -62,12 +58,11 @@
             $.post("mail.php", {
                 "your-name": $("#name").val(),
                 "your-email": $("#mail").val(),
-                "your-message": $("#area").val(),
-                "your-subject": $("#sub").val()
+                "your-message": $("#area").val()
             }).done(function () {
                 $(".errors").remove();
                 document.getElementById("info").innerHTML = "Message sent.";
-                $("#name,#mail,#area,#sub").val("");
+                $("#name,#mail,#area").val("");
                 setTimeout(function () {
                     document.getElementById("info").innerHTML = ""
                 }, 2000)
