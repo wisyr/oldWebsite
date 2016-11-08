@@ -1,3 +1,6 @@
+/*
+# FONTS
+*/
 @font-face {
     font-family: 'Raleway';
     src: url(../fonts/Raleway/Raleway.eot);
@@ -6,10 +9,13 @@
 
 @font-face {
     font-family: 'Glyphicons Halflings';
-    src: url(../fonts/glyphicons-halflings-regular.eot);
-    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(../fonts/glyphicons-halflings-regular.woff2) format("woff2"), url(../fonts/glyphicons-halflings-regular.woff) format("woff"), url(../fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg")
+    src: url(../fonts/Glyphs/glyphicons-halflings-regular.eot);
+    src: url(../fonts/Glyphs/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Glyphs/glyphicons-halflings-regular.woff2) format("woff2"), url(../fonts/Glyphs/glyphicons-halflings-regular.woff) format("woff"), url(../fonts/Glyphs/glyphicons-halflings-regular.ttf) format("truetype"), url(../fonts/Glyphs/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg")
 }
 
+/*
+# CSS_RESET
+*/
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +23,9 @@
     box-sizing: border-box
 }
 
+/*
+# MAIN STUFF
+*/
 body {
     width: 100%;
     height: 100%;
@@ -37,9 +46,13 @@ body {
     -ms-transition: all 1s ease;
     -o-transition: all 1s ease
 }
+
+/*
+# CONTENT
+*/
 .nav-list .imp {
-     color: #000;
- }
+    color: #000;
+}
 
 .container {
     padding-left: 300px;
@@ -147,6 +160,7 @@ a {
     background-color: #5b5b5b;
     color: #fff
 }
+
 .nav li:hover .imp {
     color: #fff
 }
@@ -433,6 +447,101 @@ button:hover {
     color: #000
 }
 
+.arrow {
+    display: inline-block;
+    animation: animeArrow 2s infinite;
+    margin-right: 22px;
+}
+
+#projects .container {
+    height: 52.500em;
+}
+
+.flex-container {
+    padding: 0;
+    margin: 50px 100px 50px 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.flex-container .flex-item {
+    border-radius: 5px;
+    padding: 5px;
+    width: 250px;
+    height: 200px;
+    margin: 5px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #e6e6e6;
+}
+
+.flex-container .flex-item .modal {
+    width: 250px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    margin: -5px;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container .flex-item .modal a {
+    width: 100px;
+}
+
+.flex-container .flex-item .modal a:hover {
+    color: #a6e1ec;
+}
+
+.flex-container .flex-item:hover .modal {
+    visibility: visible;
+}
+
+/*
+# KEYFRAMES
+*/
+@-webkit-keyframes animeArrow {
+    0% {
+        -webkit-transform: translateX(0);
+    }
+    70% {
+        -webkit-transform: translateX(0.750em);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes animeArrow {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+    70% {
+        transform: translateX(0.750em);
+        -webkit-transform: translateX(0.750em);
+    }
+    100% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+}
+
+/*
+# MEDIA_Q
+*/
 @media (max-width: 1100px) {
     .container {
         padding-left: 200px;
@@ -528,6 +637,10 @@ button:hover {
         width: 230px;
         padding: 12px
     }
+
+    .flex-container .flex-item, .flex-container .flex-item .modal {
+        width: 200px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -551,95 +664,5 @@ button:hover {
 
     .errors {
         margin-top: -20px
-    }
-}
-
-.arrow {
-    display: inline-block;
-    animation: animeArrow 2s infinite;
-    margin-right: 22px;
-}
-
-@-webkit-keyframes animeArrow {
-    0% {
-        -webkit-transform: translateX(0);
-    }
-    70% {
-        -webkit-transform: translateX(0.750em);
-    }
-    100% {
-        -webkit-transform: translateX(0);
-    }
-}
-
-@keyframes animeArrow {
-    0% {
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-    }
-    70% {
-        transform: translateX(0.750em);
-        -webkit-transform: translateX(0.750em);
-    }
-    100% {
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-    }
-}
-
-#projects .container {
-    /*border: 1px solid gray;*/
-    height: 52.500em;
-}
-
-.flex-container {
-    padding: 0;
-    margin: 50px 100px 50px 0;
-    list-style: none;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    -webkit-flex-flow: row wrap;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: flex-end;
-    color: #fff;
-}
-
-.flex-container .flex-item, .flex-container .modal  {
-    border-radius: 5px;
-    padding: 5px;
-    width: 250px;
-    height: 200px;
-    margin: 5px;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    border: 1px solid #e6e6e6;
-}
-
-.flex-container .modal  {
-    margin: -5px;
-    background-color: rgba(0, 0, 0, .7);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    border: none;
-}
-
-.modal a {
-    width: 100px;
-}
-.modal a:hover {
-    color: #1abc9c;
-}
-
-@media (max-width: 400px) {
-    .flex-container .flex-item, .flex-container .modal  {
-        width: 200px;
     }
 }

@@ -86,12 +86,12 @@
         x[i].style['background-image'] = "url(web/media/bg" + (i + 1) + ".PNG)";
     }
 })();
-
-(function () {
-    $(".flex-item").bind("mouseenter", function (event) {
-        $(event.target).find(".modal").fadeIn().css({'display': 'flex'});
-    });
-    $(".modal").bind("mouseleave", function (event) {
-        $(event.target).fadeOut();
-    })
-})();
+//
+// (function () {
+//     $(".flex-item").bind("mouseenter", function (event) {
+//         $(event.target).find(".modal").fadeIn().css({'display': 'flex'});
+//     });
+//     $(".modal").bind("mouseleave", function (event) {
+//         $(event.target).fadeOut();
+//     })
+// })();
