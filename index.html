@@ -1,0 +1,181 @@
+<!doctype HTML>
+<html>
+<head>
+    <title>home</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Konrad Daniek homepage">
+    <meta name="keywords" content="Konrad,Daniek,JavaScript,Developer,Junior">
+    <meta name="author" content="Konrad Daniek">
+    <link href="web/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="web/css/style.css" rel="stylesheet" type="text/css">
+    <link href="web/css/font-awesome.css" rel="stylesheet">
+    <link href="web/css/glyph.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<aside class="sidebar" id="sidebar">
+    <nav class="nav">
+        <ul class="nav-list">
+            <a href="#" id="homeButton">
+                <li class="nav-item">Home
+                    <i class="glyphicon glyphicon-home"></i></li>
+            </a>
+            <a href="#" id="aboutButton">
+                <li class="nav-item">About me
+                    <i class="glyphicon glyphicon-user"></i></li>
+            </a>
+            <a href="#" id="projectsButton">
+                <li class="nav-item"><span class="imp"><strong>Projects</strong></span>
+                    <i class="glyphicon glyphicon-briefcase"></i></li>
+            </a>
+            <a href="#" id="contactButton">
+                <li class="nav-item">Contact me
+                    <i class="glyphicon glyphicon-envelope"></i></li>
+            </a>
+            <a href="https://www.codewars.com/users/wisyr" target="_blank">
+                <li class="nav-item">Codewars
+                    <i class="fa fa-code"></i></li>
+            </a>
+            <a href="https://github.com/wisyr" target="_blank">
+                <li class="nav-item"><span class="imp"><strong>GitHub</strong></span>
+                    <i class="fa fa-github"></i></li>
+            </a>
+            <a href="http://stackoverflow.com/users/6695924/k-daniek" target="_blank">
+                <li class="nav-item">Stack Overflow
+                    <i class="fa fa-stack-overflow"></i></li>
+            </a>
+            <a href="https://pl.linkedin.com/in/konrad-daniek-865748131" target="_blank">
+                <li class="nav-item">LinkedIn
+                    <i class="fa fa-linkedin"></i></li>
+            </a>
+        </ul>
+    </nav>
+</aside>
+
+<main class="content">
+    <a class="sidebar-toggle" id='x' href="#">
+      <span class="sidebar-toggle-icon">
+      </span>
+        <b class="srt"></b>
+    </a>
+
+    <div class="outer">
+        <div id="home">
+            <div class="container">
+                <h1>Konrad Daniek</h1>
+                <h2>
+                    Junior JavaScript developer.
+                </h2>
+                <h3>23 yo engineer of the AGH University of Science and Technology. <br/>Specialized in JavaScript,
+                    Html5, Css3 and AngularJS.<br/> <br/>
+                    <span class="arrow">&#x25c0;</span> <i>Check out my projects and GitHub in the menu section.</i>
+                </h3>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="container">
+                <h1>Konrad Daniek</h1>
+                <h2>About me & Skills</h2>
+                <h4><p>Main skills</p>
+                    <ul class="skills">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>AngularJS (in progress)</li>
+                        <li>SCSS, Gulp</li>
+                        <li>Basic npm</li>
+                        <li>Familiarity with AJAX, jQuery</li>
+                        <li>Basic MySQL, PHP</li>
+                        <li>Responsive design</li>
+                        <li>Bachelor of Science</li>
+                        <li>C1 English</li>
+                        <li>Native Polish</li>
+                    </ul>
+                </h4>
+                <h4 class="hobby"><p>Hobbies</p>
+                    <ul class="hobbies">
+                        <li>Music production</li>
+                        <li>Astronomy & Physics</li>
+                        <li>Reading books</li>
+                    </ul>
+                </h4>
+            </div>
+        </div>
+
+        <div id="projects">
+            <div class="container">
+                <h1>Projects</h1>
+                <h2>My projects</h2>
+
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <div class="modal">
+                            <a href="https://wisyr.github.io/alien" target="_blank">Direct link to app</a>
+                            <a href="https://github.com/wisyr/alien" target="_blank">GitHub repository</a>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="modal">
+                            <a href="https://wisyr.github.io/namerjs" target="_blank">Direct link to app</a>
+                            <a href="https://github.com/wisyr/namerjs" target="_blank">GitHub repository</a>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="modal">
+                            <a href="https://wisyr.github.io/quizApp" target="_blank">Direct link to app</a>
+                            <a href="https://github.com/wisyr/quizApp" target="_blank">GitHub repository</a>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="modal">
+                            <a href="https://wisyr.github.io/shoppingCartApp" target="_blank">Direct link to app</a>
+                            <a href="https://github.com/wisyr/shoppingCartApp" target="_blank">GitHub repository</a>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="modal">
+                            <a href="https://wisyr.github.io/todoApp" target="_blank">Direct link to app</a>
+                            <a href="https://github.com/wisyr/todoApp" target="_blank">GitHub repository</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <h1>Contact form</h1>
+                <h2 id="hd">Get in touch with me.</h2>
+                <div id='info'></div>
+                <div class="contact-form">
+                    <form action="mail.php" method="post" id="myForm" novalidate>
+                        <input id="name" type="text" name="your-name" placeholder="Your name"
+                               data-error="Enter your name">
+                        <input id="mail" type="email" name="your-email" placeholder="Your e-mail adress"
+                               data-error="Enter a correct e-mail">
+                        <select id="sub" name="your-subject" data-error="Choose message topic">
+                            <option value="" disabled selected>- Message topic -</option>
+                            <option value="question">Question</option>
+                            <option value="proposal">Proposal</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <textarea id="area" name="your-message" placeholder="Your message"
+                                  data-error="Write down your message"></textarea>
+                        <button id="sbm" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script type="text/javascript" src="web/js/vendor.js"></script>
+<script type="text/javascript" src="web/js/script.js"></script>
+<script type="text/javascript" src="web/js/emailer.js"></script>
+</body>
+</html>
